@@ -1,0 +1,27 @@
+{
+    "name": "ics/qwant-bundle",
+    "description": "Bundle for qwant seacrh services.",
+    "type": "symfony-bundle",
+    "version": "0.0.1",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ICS\\QwantBundle\\" : "/src"
+        }
+    },
+    "require": {
+        "symfony/config": "^4.4|^5.0",
+        "symfony/dependency-injection": "^4.4|^5.0",
+        "symfony/event-dispatcher": "^4.4|^5.0",
+        "symfony/framework-bundle": "^5.2",
+        "symfony/intl": "^4.4|^5.0",
+        "symfony/string": "^5.0",
+        "symfony/translation": "^4.4|^5.0",
+        "symfony/twig-bundle": "^4.4|^5.0",
+        "symfony/http-client": "^5.2",
+        "symfony/orm-pack": "^2.1",
+        "symfony/console": "^5.2",
+        "symfony/monolog-bundle": "^3.6",
+        "symfony/security-bundle": "^5.2"
+    }
+}

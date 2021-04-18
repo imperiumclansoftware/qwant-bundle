@@ -1,0 +1,11 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  ICS\QwantBundle\Controller\:
+    resource: "../src/Controller"
+    tags: ['controller.service_arguments']
+  ICS\QwantBundle\Service\:
+    resource: "../src/Service"
+    tags: ['controller.service_arguments']

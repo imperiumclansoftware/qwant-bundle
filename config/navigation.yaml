@@ -1,0 +1,12 @@
+navigation:
+  navbars:
+    main:
+      brand: DevHost
+      brandIcon: fab fa-empire
+      color: dark
+      fixed: sticky
+      items:
+        qwant:
+          lib: Qwant
+          route: ics_qwant_homepage
+          icon: fa fa-search
