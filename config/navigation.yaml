@@ -1,10 +1,6 @@
 navigation:
   navbars:
-    main:
-      brand: DevHost
-      brandIcon: fab fa-empire
-      color: dark
-      fixed: sticky
+    mainnav:
       items:
         qwant:
           lib: Qwant
