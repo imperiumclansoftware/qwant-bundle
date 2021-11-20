@@ -2,8 +2,8 @@
 
 namespace ICS\QwantBundle\Service;
 
-use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 class QwantService
 {
@@ -19,9 +19,12 @@ class QwantService
     {
         $requestOptions = [];
 
-        $url = 'https://api.qwant.com/egp/search/' . $type . '/';
-
+        $url = 'https://api.qwant.com/v3/search/'.$type;
+        $requestOptions['t']=$type;
         $requestOptions['q'] = trim($searchValue);
+        $requestOptions['safesearch'] = 0;
+        $requestOptions['device']='desktop';
+        $requestOptions['locale']='fr_FR';
         if ($offset > 0) {
             $requestOptions['offset'] = $offset;
         }
